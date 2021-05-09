@@ -7,7 +7,7 @@ import (
 
 func PrintInTriangle(text string) {
 	height := calculateTriangleHeight(len(text))
-	fmt.Printf(getTriangleString(text, height))
+	fmt.Printf(getTriangleString(text, height+4))
 }
 
 func getTriangleString(text string, height int) string {
