@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func PrintInTriangle(text string, baseFactor, heightFactor int) {
+func PrintInTriangle(text string) {
 	height := calculateTriangleHeight(len(text))
 	fmt.Printf(getTriangleString(text, height))
 }
