@@ -15,8 +15,8 @@ func main() {
 
 ```text
 Output:
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
-*  This is a sample string to print in    *  
-*  senpathi/printy                        *  
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  
+* * * * * * * * * * * * * * * * *
+*  This is a sample string to   *
+*  print in senpathi/printy     *
+* * * * * * * * * * * * * * * * *
 ```
