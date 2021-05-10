@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	str := `This is a sample string to print in senpathi/printy`
-	printy.PrintInRectangle(str, 27, 2)
+	str := `This is a sample string to print in senpathi/printy Rectangle`
+	printy.PrintInRectangle(str, 16, 1)
 }
