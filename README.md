@@ -8,17 +8,17 @@ package main
 import "github.com/senpathi/printy"
 
 func main() {
-	str := `This is a sample string to print in senpathi/printy`
-	printy.PrintInRectangle(str, 7, 2)
+	str := `This is a sample string to print in senpathi/printy Rectangle`
+	printy.PrintInRectangle(str, 16, 1)
 }
 
 ```
 ```text
 Output:
-* * * * * * * * * * * * * * * * *
-*  This is a sample string to   *
-*  print in senpathi/printy     *
-* * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * ** *
+*  This is a sample string to print  *
+*   in senpathi/printy Rectangle     *
+* * * * * * * * * * * * * * * * * ** *
 ```
 
 ### Triangle
@@ -28,7 +28,7 @@ package main
 import "github.com/senpathi/printy"
 
 func main() {
-	str := `This is a sample string to print in senpathi/printy`
+	str := `This is a sample string to print in senpathi/printy Triangle`
 	printy.PrintInTriangle(str)
 }
 ```
@@ -44,6 +44,6 @@ Output:
      *   string t  *
     *  o print in   *
    *  senpathi/prin  *
-  *  ty               *
+  *  ty Triangle      *
  * * * * * * * * * * * *
 ```
