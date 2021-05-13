@@ -47,3 +47,31 @@ Output:
   *  ty Triangle      *
  * * * * * * * * * * * *
 ```
+
+### Circle
+```bigquery
+package main
+
+import (
+	"github.com/senpathi/printy"
+)
+
+func main() {
+	str := `This is a sample string to print in senpathi/printy Circle`
+	printy.PrintInCircle(str)
+}
+```
+```text
+Output: 
+         ***** *****             
+     **               **         
+   *      This is a      *       
+  *     sample string     *      
+ *    to print in senpa    *     
+ *    thi/printy Circle    *     
+ *                         *     
+  *                       *      
+   *                     *       
+     **               **         
+         ***** *****   
+```
