@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	str := `This is a sample string to print in senpathi/printy Circle aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbccccccccc`
+	str := `This is a sample string to print in senpathi/printy Circle`
 	printy.PrintInCircle(str)
 }
