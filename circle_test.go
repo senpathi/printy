@@ -12,7 +12,7 @@ func TestRadius(t *testing.T) {
 	radius := []int{1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11}
 
 	for i, sample := range samples {
-		r := dd(sample)
+		r := getRadius(sample)
 		if r < radius[i] {
 			t.Errorf(`radius expected %d, received %d for area %d`, radius[i], r, sample)
 		}

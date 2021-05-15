@@ -5,8 +5,10 @@ import (
 	"math"
 )
 
+// PrintInCircle prints sent text in a circle.
+// Circle's size is determined according to the text's length
 func PrintInCircle(text string) {
-	radius := dd(len(text)) + 2
+	radius := getRadius(len(text)) + 2
 	diameter := (radius * 2) + 1
 	tolerance := 0.5
 	count := 0
@@ -44,22 +46,14 @@ func PrintInCircle(text string) {
 	}
 }
 
-// area printing circle = (5r + 2) / 2  * r * PI
-func dd(area int) int {
-	//A=5, B=2, C = (-2 * Area / PI)
+// getRadius calculated a circle's minimum radius to print text's length in it.
+func getRadius(area int) int {
 	a := 7.96
 	b := 6.72
 	c := 2.04 - float64(area)
 
-	r := (-b + math.Sqrt((b*b)-(4*a*c))) / (2 * a)
-	//fmt.Print(`r = `, r)
-	r = math.Ceil(r) //gofloat.ToFloat(r, 1).Float64()
+	r := math.Ceil(-b+math.Sqrt((b*b)-(4*a*c))) / (2 * a)
 
-	//fmt.Print(`   radius := `, r)
-	//fmt.Print(`   area  := `, area)
-	//r := math.Round(-2 + math.Sqrt(discriminant)/(2*a))
-
-	//fmt.Println(`   true area := `, (a * r * r) + (b * r) + 1.2)
 	return int(r)
 }
 
